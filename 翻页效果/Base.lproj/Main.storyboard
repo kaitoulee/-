@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="翻页效果" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WmS-tC-ekZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="540"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hyf-iV-brT">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="540"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1194" translatesAutoresizingMaskIntoConstraints="NO" id="5je-Os-aIZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="540"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="540" id="Stv-Sj-YUj"/>
+                                    <constraint firstAttribute="width" constant="320" id="bL6-Tt-EX5"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10q-Uw-UQP">
+                                <rect key="frame" x="145" y="538" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QP6-mr-No1"/>
+                                    <constraint firstAttribute="width" constant="30" id="eJH-pJ-hmb"/>
+                                </constraints>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <segue destination="DPP-dR-Fuy" kind="modal" id="adW-02-upy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WmS-tC-ekZ" secondAttribute="trailing" constant="-20" id="3ks-CH-fOx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WmS-tC-ekZ" secondAttribute="bottom" constant="28" id="EHb-QE-b5S"/>
+                            <constraint firstItem="WmS-tC-ekZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="F6C-Lh-qsN"/>
+                            <constraint firstItem="WmS-tC-ekZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gPc-oB-zXC"/>
+                            <constraint firstItem="10q-Uw-UQP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="518" id="hyJ-SI-4Pi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="10q-Uw-UQP" secondAttribute="bottom" id="l2o-O9-5kE"/>
+                            <constraint firstItem="10q-Uw-UQP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="125" id="lsc-FW-bY1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="10q-Uw-UQP" secondAttribute="trailing" constant="125" id="oCx-Fd-njD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="357"/>
+        </scene>
+        <!--Imge View Controller-->
+        <scene sceneID="bFN-t8-ugK">
+            <objects>
+                <viewController id="DPP-dR-Fuy" customClass="imgeViewController" customModule="翻页效果" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="srT-gF-g52"/>
+                        <viewControllerLayoutGuide type="bottom" id="2oO-r2-Wcq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ONW-pa-n4C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_1195" translatesAutoresizingMaskIntoConstraints="NO" id="AmQ-gW-Iaa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="543"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="543" id="afN-Ai-exv"/>
+                                    <constraint firstAttribute="width" constant="320" id="vah-Cc-ZPV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96E-5b-HLJ">
+                                <rect key="frame" x="143" y="539" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GIr-V9-ffd"/>
+                                    <constraint firstAttribute="width" constant="34" id="J2f-fY-1o4"/>
+                                </constraints>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="backButClicked:" destination="DPP-dR-Fuy" eventType="touchUpInside" id="chf-EJ-fpU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="96E-5b-HLJ" firstAttribute="top" secondItem="srT-gF-g52" secondAttribute="bottom" constant="519" id="3TQ-Is-jeM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="96E-5b-HLJ" secondAttribute="trailing" constant="123" id="5Zm-As-evi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="96E-5b-HLJ" secondAttribute="bottom" constant="-1" id="Iwe-Jf-jiI"/>
+                            <constraint firstItem="96E-5b-HLJ" firstAttribute="leading" secondItem="ONW-pa-n4C" secondAttribute="leadingMargin" constant="123" id="MsH-0H-YUZ"/>
+                            <constraint firstItem="2oO-r2-Wcq" firstAttribute="top" secondItem="AmQ-gW-Iaa" secondAttribute="bottom" constant="25" id="Qak-kE-NJi"/>
+                            <constraint firstItem="AmQ-gW-Iaa" firstAttribute="top" secondItem="ONW-pa-n4C" secondAttribute="topMargin" id="SCm-3P-ynk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AmQ-gW-Iaa" secondAttribute="trailing" constant="-20" id="iRN-0i-4Y4"/>
+                            <constraint firstItem="AmQ-gW-Iaa" firstAttribute="leading" secondItem="ONW-pa-n4C" secondAttribute="leadingMargin" constant="-20" id="x5Q-8l-yOG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiz-dA-Kfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1194" width="640" height="455"/>
+        <image name="IMG_1195" width="448" height="640"/>
+    </resources>
+</document>
